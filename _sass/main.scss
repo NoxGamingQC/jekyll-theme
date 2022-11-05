@@ -1,3 +1,4 @@
+@import "bootstrap/bootstrap";
 @import "variables";
 
 html, body {
@@ -8,78 +9,60 @@ html, body {
 }
 
 .header {
-    background-color: $brand-primary;
+    background: linear-gradient(225deg,$brand-orange, $brand-primary);
     min-height: 200px;
     padding: 5%;
     margin-bottom: 3%;
     h1, h2, h3, h4, h5, h6 {
-        color: $text-color;
+        color: $text-color !important;
         text-align: center;
         margin-bottom: 3%;
     }
 }
 
-.content {
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-footer {
-    margin-bottom: 5%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-h1 ­{
-    color: $brand-primary;
-    font-weight: bolder;
-}
-
-h2, h3, h4, h5, h6 {
-    color: $brand-primary;
-    font-weight: 400;
-}
-
-a {
+h1 {
     color: $text-color;
-    text-decoration: none;
+    font-weight: 900;
 }
 
-a:hover {
+.content h2, .content h3, .content h4, .content h5, .content h6 {
+    color: $brand-primary;
+    font-weight: 600;
+    background: -webkit-linear-gradient(225deg,$brand-orange, $brand-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.content a, footer a {
+    color: $text-color;
+    text-decoration: none !important;
+}
+
+.content a:hover, footer a:hover {
     color: darken($brand-primary, 5%);
-    text-decoration: none;
+    text-decoration: none !important;
+    background: -webkit-linear-gradient(225deg,$brand-orange, $brand-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 a.btn {
     display:inline-block;
     border: 1px solid $background-color;
+    background-color: transparent;
     border-radius: 0.3rem;
     padding: 15px;
     margin-top: 1% !important;
+    text-decoration: none !important;
+    color: $text-color;
 }
 
 a.btn:hover {
     display:inline-block;
     border: 1px solid $background-color;
     background-color: $background-color;
-    color: $text-color;
+    color: $text-color !important;
     border-radius: 0.3rem;
     padding: 15px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-hr {
-    margin-top: 8%;
-    margin-bottom: 8%;
+    text-decoration: none !important;
 }
