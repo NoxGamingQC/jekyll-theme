@@ -21,8 +21,19 @@ html, body {
 }
 
 h1 {
-    color: $text-color;
-    font-weight: 900;
+    font-family: $rochester-font !important;
+    font-size: 75px;
+    @media not all and (min-width: $screen-md-min) {
+        font-size: 50px;
+    }
+}
+
+h2 {
+    font-family: $rochester-font !important;
+    font-size: 50px;
+    @media not all and (min-width: $screen-md-min) {
+        font-size: 36px;
+    }
 }
 
 .content h2, .content h3, .content h4, .content h5, .content h6 {
