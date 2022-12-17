@@ -5,7 +5,7 @@ description: My own theme.
 author: NoxGamingQC
 url: https://github.com/NoxGamingQC/jekyll-theme
 theme: noxgamingqc
-repository_name: Jekill theme
+repository_name: Jekyll theme
 repository_url: https://github.com/NoxGamingQC/jekyll-theme
 is_project_page: true
 owner_url: https://github.com/NoxGamingQC

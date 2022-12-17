@@ -8,7 +8,7 @@
     <body>
         <div class="header">
             <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-            <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+            <h3>{{ page.description | default: site.description | default: site.github.project_tagline }}</h3>
             <div class="text-center">
                 {% if page.is_project_page | site.github.is_project_page %}
                     <a href="{{ page.repository_url | site.github.repository_url }}" class="btn">View on GitHub</a>
