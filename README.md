@@ -2,8 +2,8 @@
 
 <p align="left">
     <img alt="Type" src="https://img.shields.io/badge/project%20type-theme-red?style=for-the-badge" />
-    <img alt="Ruby" src="https://img.shields.io/badge/ruby-^2.5.0-red?style=for-the-badge" />
-    <img alt="Gem" src="https://img.shields.io/badge/ruby%20gem-0.2.1-red?style=for-the-badge" />
+    <img alt="Ruby" src="https://img.shields.io/badge/ruby-^2.5.0-blue?style=for-the-badge" />
+    <img alt="Gem" src="https://img.shields.io/badge/ruby%20gem-0.2.1-blue?style=for-the-badge" />
 </p>
 
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
