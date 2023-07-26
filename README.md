@@ -1,16 +1,21 @@
 # My own Jekyll theme
 
-<p align="left">
-    <img alt="Type" src="https://img.shields.io/badge/project%20type-theme-red?style=for-the-badge" />
-    <img alt="Ruby" src="https://img.shields.io/badge/ruby-^2.5.0-blue?style=for-the-badge" />
-    <img alt="Gem" src="https://img.shields.io/badge/ruby%20gem-0.2.1-blue?style=for-the-badge" />
-</p>
+[![Type](https://img.shields.io/badge/project%20type-theme-blue?style=for-the-badge&labelColor=333333)](#)
+[![State](https://img.shields.io/badge/state-maintained-228C22?style=for-the-badge&labelColor=333333)](#)
+[![Repo size](https://img.shields.io/github/repo-size/NoxGamingQC/jekyll-theme?style=for-the-badge&logo=github&logoColor=%23ffffff&labelColor=333333)](#)
+[![License](https://img.shields.io/github/license/NoxGamingQC/jekyll-theme?style=for-the-badge&labelColor=333333)](#)
 
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
 
 To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
+## Requirements
+
+![Ruby](https://img.shields.io/badge/ruby-^2.5.0-%23CC342D.svg?style=for-the-badge&logo=ruby&labelColor=333333&logoColor=white)
+![Ruby gem](https://img.shields.io/badge/ruby%20gem-0.2.1-%23CC342D.svg?style=for-the-badge&logo=ruby&labelColor=333333&logoColor=white)
+
 ## Installation
+
 
 Add this line to your Jekyll site's `Gemfile`:
 
