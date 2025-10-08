@@ -2,3 +2,9 @@ title: NoxGamingQC theme
 description: NoxGamingQC's custom jekyll theme.
 show_downloads: true
 theme: noxgamingqc
+sass:
+   sass_dir: assets/css
+
+# Exclude from processing.
+exclude:
+  - bower_components

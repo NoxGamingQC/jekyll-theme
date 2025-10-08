@@ -1,22 +1,74 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-@import url('https://fonts.googleapis.com/css?family=Rochester:400');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 
-$background-color: #222222;
+.developper-font {
+  font-family: "Ms Madi", cursive;
+}
 
-$brand-primary: #c22222;
-$brand-info: #bed5dc;
-$brand-success: #3AA55D;
-$brand-warning: #F9A61A;
-$brand-danger: #EC4145;
-$brand-orange: #E56F1F;
-$brand-offline: #737F8C;
+$brand-white: #F5F5F5;
+$brand-black: #252525;
+$brand-primary: #880000;
+$brand-success: #32CD32;
+$brand-warning: #FFFC00;
+$brand-danger: #CD1C18;
+$brand-info: #80DAEB;
+$brand-orange: #F28500;
 
-$raleway-font: "Raleway", sans-serif;
-$rochester-font: "Rochester", cursive;
+[data-bs-theme="dark"] {
+    --bs-body-color: #F5F5F5;
+    --bs-body-bg: #252525;
+    --bs-hover-bg: #202020CC;
+    .text-primary {
+        -webkit-text-stroke: 0.3px #f5f5f5;
+    }
+}
 
-$font-size-base: 18px;
-$line-height-base: 1.6;
+[data-bs-theme="light"] {
+    --bs-body-color: #252525;
+    --bs-body-bg: #f5f5f5;
+    --bs-hover-bg: #f0f0f0CC;
+}
 
-$text-color: #ffffff;
+[data-bs-theme="dracula"] {
+    --bs-body-color: #f8f8f2;
+    --bs-body-bg: #282a36;
+    --bs-hover-bg: #f0f0f0CC;
+    --bs-primary: #bd93f9;
+    --bs-success: #50fa7b;
+    --bs-warning: #f1fa8c;
+    --bs-danger: #ff79c6;
+    --bs-info: #8be9fd;
+}
 
-$text-highlight-color: #ffffff;
+$text-color: var(--bs-body-color);
+$background-color: var(--bs-body-bg);
+$hover-bg: var(--bs-hover-bg);
+
+$brand-primary-text-emphasis: #F5F5F5;
+$brand-success-text-emphasis: #252525;
+$brand-warning-text-emphasis: #252525;
+$brand-danger-text-emphasis: #F5F5F5;
+$brand-info-text-emphasis: #252525;
+$brand-orange-text-emphasis: #F5F5F5;
+
+.text-white {
+    color: $brand-white !important;
+}
+.text-black {
+    color: $brand-black !important;
+}
+
+$theme-colors: (
+    "primary": $brand-primary,
+    "success": $brand-success,
+    "info": $brand-info,
+    "warning": $brand-warning,
+    "danger": $brand-danger,
+);
+
+$theme-colors-text: (
+    "primary": $brand-primary-text-emphasis,
+    "success": $brand-success-text-emphasis,
+    "info": $brand-info-text-emphasis,
+    "warning": $brand-warning-text-emphasis,
+    "danger": $brand-danger-text-emphasis,
+);

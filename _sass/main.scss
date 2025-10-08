@@ -1,44 +1,51 @@
-@import "bootstrap/bootstrap";
-@import "variables";
+@import "../../bower_components/bootstrap/scss/functions";
+@import 'variables';
+@import "../../bower_components/bootstrap/scss/variables";
+@import "../../bower_components/bootstrap/scss/bootstrap";
+@import "../../bower_components/bootstrap/scss/variables-dark";
+
+@import "../../bower_components/bootstrap/scss/maps";
+@import "../../bower_components/bootstrap/scss/mixins";
+@import "../../bower_components/bootstrap/scss/root";
+
+// Optional Bootstrap components
+@import "../../bower_components/bootstrap/scss/utilities";
+@import "../../bower_components/bootstrap/scss/reboot";
+@import "../../bower_components/bootstrap/scss/containers";
+@import "../../bower_components/bootstrap/scss/grid";
+@import "../../bower_components/bootstrap/scss/helpers";
+@import "../../bower_components/bootstrap/scss/utilities/api";
+
 
 html, body {
-    background-color: #222222;
     color: $text-color;
-    font-family: $raleway-font;
     font-size: $font-size-base;
 }
 
 .header {
-    background: linear-gradient(225deg,$brand-orange, $brand-primary);
+    background-color: $brand-primary;
     min-height: 200px;
     padding: 5%;
     margin-bottom: 3%;
     h1, h2, h3, h4, h5, h6 {
-        color: $text-color !important;
+        color: $brand-primary-text-emphasis !important;
         text-align: center;
         margin-bottom: 3%;
     }
+
 }
 
 h1 {
-    font-family: $rochester-font !important;
     font-size: 75px;
-    @media not all and (min-width: $screen-md-min) {
-        font-size: 50px;
-    }
 }
 
 h3 {
-    font-family: $raleway-font !important;
     font-size: 24px;
 }
 
 .content h2, .content h3, .content h4, .content h5, .content h6 {
     color: $brand-primary;
     font-weight: 600;
-    background: -webkit-linear-gradient(225deg,$brand-orange, $brand-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
 }
 
 .content a, footer a {
@@ -47,11 +54,8 @@ h3 {
 }
 
 .content a:hover, footer a:hover {
-    color: darken($brand-primary, 5%);
+    color: $brand-primary;
     text-decoration: none !important;
-    background: -webkit-linear-gradient(225deg,$brand-orange, $brand-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 a.btn {
@@ -62,7 +66,7 @@ a.btn {
     padding: 15px;
     margin-top: 1% !important;
     text-decoration: none !important;
-    color: $text-color;
+    color: $brand-primary-text-emphasis;
 }
 
 a.btn:hover {

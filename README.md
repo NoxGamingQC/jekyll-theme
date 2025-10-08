@@ -52,6 +52,7 @@ You need to install those requirements to make this run.
 
 ```bash
 sudo snap ruby --classic
+sudo apt-get update && sudo apt-get install -y libyaml-dev # Required to install bootstrap
 ```
 
 ### After installing the requirements...
