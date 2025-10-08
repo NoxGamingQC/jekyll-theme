@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "noxgamingqc"
-  spec.version       = "0.2.1"
+  spec.version       = "0.3.0"
   spec.authors       = ["NoxGamingQC"]
-  spec.email         = ["noxgamingqc@gmail.com"]
+  spec.email         = ["jbedard@noxgamingqc.ca"]
 
   spec.summary       = "My own jekyll theme"
   spec.homepage      = "https://github.com/NoxGamingQC/jekyll-theme"
