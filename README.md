@@ -46,6 +46,7 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 Bug reports and pull requests are welcome on GitHub at https://github.com/NoxGamingQC/jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ## Development
+Here are the steps to follow if you want to setup this repository to be able to work on it.
 
 ### Ubuntu requirements
 You need to install those requirements to make this run.
