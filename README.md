@@ -47,13 +47,14 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/NoxGam
 
 ## Development
 
-### Ubuntu
+### Ubuntu requirements
 You need to install those requirements to make this run.
 
 ```bash
 sudo snap ruby --classic
-``
+```
 
+### After installing the requirements...
 
 To set up your environment to develop this theme, run `bundle install`.
 
