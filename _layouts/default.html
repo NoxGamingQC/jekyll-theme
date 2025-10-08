@@ -10,17 +10,39 @@
     </header>
     <body>
         <div class="header">
-            <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-            <h3>{{ page.description | default: site.description | default: site.github.project_tagline }}</h3>
-            <div class="text-center">
-                {% if page.is_project_page | site.github.is_project_page %}
-                    <a href="{{ page.repository_url | site.github.repository_url }}" class="btn">View on GitHub</a>
-                {% endif %}
-                {% if page.show_downloads | site.show_downloads %}
-                    <a href="{{ page.zip_url | site.github.zip_url }}" class="btn">Download .zip</a>
-                    <a href="{{ page.tar_url | site.github.tar_url }}" class="btn">Download .tar.gz</a>
-                {% endif %}
-            </div>
+            {% if page.image %}
+                <div class="row text-center">
+                    <div class="col-2"></div>
+                    <div class="col-2 text-right">
+                        <img src="https://www.jimmybedard.ca/img/logo.png" alt="Logo" class="header-logo" width="200px" />
+                    </div>
+                    <div class="col-6">
+                        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+                        <h3>{{ page.description | default: site.description | default: site.github.project_tagline }}</h3>
+                        <div class="text-center">
+                            {% if page.is_project_page | site.github.is_project_page %}
+                                <a href="{{ page.repository_url | site.github.repository_url }}" class="btn">View on GitHub</a>
+                            {% endif %}
+                            {% if page.show_downloads | site.show_downloads %}
+                                <a href="{{ page.zip_url | site.github.zip_url }}" class="btn">Download .zip</a>
+                                <a href="{{ page.tar_url | site.github.tar_url }}" class="btn">Download .tar.gz</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {%else%}
+                    <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+                    <h3>{{ page.description | default: site.description | default: site.github.project_tagline }}</h3>
+                    <div class="text-center">
+                        {% if page.is_project_page | site.github.is_project_page %}
+                            <a href="{{ page.repository_url | site.github.repository_url }}" class="btn">View on GitHub</a>
+                        {% endif %}
+                        {% if page.show_downloads | site.show_downloads %}
+                            <a href="{{ page.zip_url | site.github.zip_url }}" class="btn">Download .zip</a>
+                            <a href="{{ page.tar_url | site.github.tar_url }}" class="btn">Download .tar.gz</a>
+                        {% endif %}
+                    </div>
+                {%endif%}
         </div>
         <div class="container">
             <div class="content">
